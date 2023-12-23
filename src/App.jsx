@@ -3,6 +3,7 @@ import './App.css'
 import About from './Components/About'
 import Contact from './Components/Contact'
 import Experience from './Components/Experience'
+import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import Project from './Components/Project'
@@ -18,6 +19,7 @@ function App() {
     <Service />
     <Experience/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

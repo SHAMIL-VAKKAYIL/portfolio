@@ -70,7 +70,9 @@ const info=[{
         </div>
 
         </div>
+        <br /><br /><br />
       </div>
+    
     </div>
 
   )
