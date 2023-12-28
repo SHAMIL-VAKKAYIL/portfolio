@@ -25,18 +25,18 @@ const info=[{
 
   return (
 
-    <div className='flex justify-center bg-[#191919] '>
+    <div id="Contact" className='flex justify-center bg-[#191919] '>
       <div className="w-[80%]"><br /><br /><br /><br />
 
-        <h1 className=" flex justify-center text-white text-4xl mt-10">Contact</h1><br /><br />
+        <h1 className=" flex justify-center text-white text-4xl mt-10"><h1 className='text-[rgb(241,141,59)]'>C</h1>ontac<h1 className='text-[rgb(241,141,59)]'>t</h1></h1><br /><br />
         <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2 xl:gap-x-8'>
           <div className="  ">
           <p className="text-white text-xl">Get in <span className="text-[rgb(241,141,59)]">Touch</span></p>
-            <form action="" className="p-10 flex flex-col gap-5 border border-[rgb(241,141,59)] ">
+            <form action="/viewpost" method="post" className="p-10 flex flex-col gap-5 border border-[rgb(241,141,59)] ">
               <input type="text" name="name" placeholder="Enter your name" className="rounded-sm p-2 bg-transparent text-white border border-[rgb(241,141,59)] " />
               <input type="email" name="email" id="" placeholder="Enter your email" className="rounded-sm p-2 bg-transparent border text-white border-[rgb(241,141,59)]"/>
 
-             <textarea name="msg" id="" cols="28" rows="8" placeholder="Enter your massege..." className="rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
+             <textarea name="body" id="" cols="28" rows="8" placeholder="Enter your massege..." className="rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
              <div></div>
              <div className="flex justify-end ">
              <input type="submit" value="SEND" className="text-white bg-[rgb(241,141,59)] px-6 py-2 rounded-sm hover:brightness-110" />
@@ -49,15 +49,15 @@ const info=[{
                 info.map((item,index)=>{
                   return(
                     <div key={index} className="">
-                      <a href={item.href} className="flex flex-col gap-3 md:flex-row  ">
+                      <a href={item.href} className="flex flex-col gap-3 lg:flex-row  ">
 
                       <div className="text-[rgb(241,141,59)] flex justify-center  " >
                        {item.icon}
                         </div>
                       <div>
-                        <h1 className="text-white text-lg flex justify-center md:flex md:justify-start">{item.title}</h1>
+                        <p className="text-white text-lg flex justify-center md:flex lg:justify-start">{item.title}</p>
 
-                      <p className="text-white opacity-60 flex justify-center">{item.details}</p>
+                      <p className="text-white opacity-60 flex justify-center ">{item.details}</p>
                       </div>
                       </a>
                       

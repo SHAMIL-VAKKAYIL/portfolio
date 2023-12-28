@@ -22,9 +22,9 @@ const fticon=[
 ]
 
     return (
-        <div className="flex justify-center bg-[#191919]  ">
-            <div className="w-[90%] border-t"><br />
-                <div className="flex justify-between">
+        <div className="  bg-[#1b1919f7]  ">
+            <div className=""><br />
+                <div className="flex justify-between gap-10 sm:gap p-5">
                      <div className="flex gap-3">
                         {fticon.map((item)=>{
                             return(
@@ -36,13 +36,13 @@ const fticon=[
                             )
                         })}
                         </div>
-                    <div>
-                         <h1 className=" text-white text-xl ">MUHAMMED <span className="text-[rgb(241,141,59)]">SHAMIL</span></h1>
+                    <div >
+                         <p className=" text-white text-xl ">MUHAMMED <span className="text-[rgb(241,141,59)]">SHAMIL</span></p>
                     </div>
 
                 </div><br />
                     <div className="flex justify-center">
-                        <p className=" text-white  mt-10 ">Copyright © 2022 - 2023 Muhammed Shamil. Design Limited</p>
+                        <p className=" text-white  mt-10 w-[95%] flex justify-center">Copyright © 2023 - 2024 Muhammed Shamil. Design Limited</p>
                     </div><br /><br />
 
             </div>

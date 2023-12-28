@@ -11,7 +11,7 @@ import Service from './Components/Service'
 
 function App() {
   return (
-    <>
+    <div>
     <Navbar />
     <Hero />
     <About />
@@ -20,7 +20,7 @@ function App() {
     <Experience/>
     <Contact/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
