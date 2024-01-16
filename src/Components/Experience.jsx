@@ -35,7 +35,7 @@ const skills = [
   },
 
 {
-  icon:'https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667' ,
+  icon:'https://camo.githubusercontent.com/f32e9cca1f0df0138a8f536217daa54ad21b6913642422f32e3c5c623f3a06b9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667' ,
   title:'Figma'
   ,classname:'rounded-md px-5 py-2  shadow-md hover:shadow-sm hover:shadow-[#0acf83] shadow-[#0acf83] transition duration-300 ease-in-out'
 
@@ -65,7 +65,7 @@ const skills = [
 
 },
 {
-  icon:'https://camo.githubusercontent.com/5734d0669fe22ce04a1cb989a156cd32c379875f6bca56d5210c9432824856d9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667' ,
+  icon:'https://camo.githubusercontent.com/0568e2de313626b2bd9b96f326941b012d45e9a4db1a23aa78bd8036207e57f8/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667' ,
   title:'Tailwind-css'
   ,classname:'rounded-md px-5 py-2  shadow-md hover:shadow-sm hover:shadow-[#41a5b2] shadow-[#41a5b2] transition duration-300 ease-in-out '
 

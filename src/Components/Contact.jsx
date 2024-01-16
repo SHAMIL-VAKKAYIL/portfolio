@@ -1,8 +1,27 @@
 import { FaMapMarkedAlt,FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+       'service_lx11mqa',
+       'template_vwdlq03',
+      form.current, 
+       'bO-N3P9Ud8PRpMVfJ')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset()
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
 const info=[{
   icon:<FaMapMarkedAlt className="h-8 w-auto hover:scale-110 hover:brightness-125 duration-300" />,
@@ -32,11 +51,11 @@ const info=[{
         <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2 xl:gap-x-8'>
           <div className="  ">
           <p className="text-white text-xl">Get in <span className="text-[rgb(241,141,59)]">Touch</span></p>
-            <form action="/viewpost" method="post" className="p-10 flex flex-col gap-5 border border-[rgb(241,141,59)] ">
-              <input type="text" name="name" placeholder="Enter your name" className="rounded-sm p-2 bg-transparent text-white border border-[rgb(241,141,59)] " />
-              <input type="email" name="email" id="" placeholder="Enter your email" className="rounded-sm p-2 bg-transparent border text-white border-[rgb(241,141,59)]"/>
+            <form ref={form} onSubmit={sendEmail} action="" method="post" className="p-10 flex flex-col gap-5 border border-[rgb(241,141,59)] ">
+              <input type="text" name="user_name" placeholder="Enter your name" className="rounded-sm p-2 bg-transparent text-white border border-[rgb(241,141,59)] " />
+              <input type="email" name="user_email" id="" placeholder="Enter your email" className="rounded-sm p-2 bg-transparent border text-white border-[rgb(241,141,59)]"/>
 
-             <textarea name="body" id="" cols="28" rows="8" placeholder="Enter your massege..." className="rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
+             <textarea name="message" id="" cols="28" rows="8" placeholder="Enter your massege..." className="rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
              <div></div>
              <div className="flex justify-end ">
              <input type="submit" value="SEND" className="text-white bg-[rgb(241,141,59)] px-6 py-2 rounded-sm hover:brightness-110" />
