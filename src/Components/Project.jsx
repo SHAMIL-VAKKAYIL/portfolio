@@ -1,19 +1,20 @@
 import searchengine from '../assets/search.jpg'
 
-const projects=[{
-    title:"Giphy-Search Engine",
-    img:searchengine,
-    discrp:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque ipsam accusantium debitis tempore facilis. Inventore non est ducimus sint earum expedita. Atque minus perferendis nam beatae tempora maxime unde."
-    },
+const projects=[
     {
         title:"Giphy-Search Engine",
         img:searchengine,
-        discrp:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque ipsam accusantium debitis tempore facilis. Inventore non est ducimus sint earum expedita. Atque minus perferendis nam beatae tempora maxime unde."
+        discrp:"A search engine for animated GIFs, short, looped video clips without sound that are often used in social media "
     },
     {
-        title:"Giphy-Search Engine",
-        img:searchengine,
-        discrp:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque ipsam accusantium debitis tempore facilis. Inventore non est ducimus sint earum expedita. Atque minus perferendis nam beatae tempora maxime unde."
+        title:"Nodemailer-App",
+        img:"https://plus.unsplash.com/premium_photo-1682309526815-efe5d6225117?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        discrp:"Send emails easily  using NodeMailerApp. Just fill in the form and click 'Send Email' to get started. "
+    },
+    {
+        title:"Food Recipes",
+        img:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+        discrp:"It helps to. Find the ingredients and list of instructions of a prepared foods.    "
     }
 ]
 

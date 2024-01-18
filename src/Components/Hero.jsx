@@ -10,7 +10,7 @@ function Hero() {
                         
                          <p className="text-3xl text-[rgb(241,141,59)]">Muhammed Shamil</p>
                         <div className="flex flex-col gap-4 font-bold">
-                            <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl ">Front-End</p>
+                            <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl ">Full-Stack</p>
                             <p className="text-4xl font-bold tracking-tight text-white sm:text-6xl flex md:justify-center lg:justify-normal  lg:ml-20 "> Web Developer</p>
                         </div>
                     </div>
