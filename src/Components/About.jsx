@@ -14,7 +14,7 @@ function About() {
         </div>
         <div className="  justify-center w-[80%] ">
           <h1 className="text-4xl font-normal text-white hidden sm:flex gap-2"> ABOUT  <h1 className='text-[rgb(241,141,59)]'> ME</h1> </h1>
-          <p className='text-white sm:mt-10'>I am a self-taught freelance software developer specializing in crafting exceptional digital experiences. With expertise spanning web application , I deliver efficient, cost-effective, and high-quality solutions. My focus on speed, user-friendliness, and accessibility ensures optimal user experiences. Clients appreciate the versatility I bring to projects, seamlessly navigating both front-end and back-end development. Whether it's creating successful web apps , I am committed to exceeding expectations and bringing your digital vision to life.</p>
+          <p className='text-white sm:mt-10'>Welcome to my corner of the digital realm! As a fervent explorer of the MERN stack (MongoDB, Express.js, React.js, Node.js), I thrive on architecting sleek, responsive, and feature-rich web experiences. With a knack for blending creativity with cutting-edge technology, I'm here to shape the future of the web, one line of code at a time.</p>
         </div>
 
       </div>
