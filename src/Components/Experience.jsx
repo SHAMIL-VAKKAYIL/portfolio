@@ -92,7 +92,7 @@ const skills = [
                 <img src={item.icon} alt="" className="  p-3" />
                 </div>
                 <div className='flex justify-center'>
-                <h3 className="   text-white">{item.title}</h3>
+                <h3 className=" text-center   text-white">{item.title}</h3>
                 </div>
             </div>
           )

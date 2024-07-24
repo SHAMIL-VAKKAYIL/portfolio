@@ -1,12 +1,9 @@
-import { FaInstagramSquare,FaGithubSquare,FaFacebookSquare,FaTwitterSquare   } from "react-icons/fa";
+import { FaInstagramSquare,FaGithubSquare,FaTwitterSquare   } from "react-icons/fa";
 
 
 function Footer() {
 const fticon=[
-    {
-     icon:<FaFacebookSquare className="h-8 w-auto hover:scale-110 hover:brightness-125 duration-300"/>,
-     href:"https://www.facebook.com/profile.php?id=100085049296679&mibextid=ZbWKwL"
-},
+    
 {
     icon:<FaInstagramSquare className="h-8 w-auto hover:scale-110 hover:brightness-125 duration-300"/>,
     href:"https://www.instagram.com/_shamil__vakkayil_?igsh=bzh6MmxkOWo2c2t5"
@@ -28,7 +25,7 @@ const fticon=[
                      <div className="flex gap-3">
                         {fticon.map((item)=>{
                             return(
-                                <div key={item.icon} className= " shadow-white rounded-sm text-[rgb(241,141,59)] flex justify-center">
+                                <div key={item.icon} className= " shadow-white rounded-sm text-[rgb(241,141,59)] flex justify-center item">
                                     <a href={item.href} className="  " >
                                     {item.icon}
                                     </a>
@@ -42,7 +39,7 @@ const fticon=[
 
                 </div><br />
                     <div className="flex justify-center">
-                        <p className=" text-white  mt-10 w-[95%] flex justify-center">Copyright © 2023 - 2024 Muhammed Shamil. Design Limited</p>
+                        <p className=" text-white  mt-10 w-[95%] text-center">Copyright © 2023 - 2024 Muhammed Shamil. Design Limited</p>
                     </div><br /><br />
 
             </div>

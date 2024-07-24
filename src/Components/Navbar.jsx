@@ -34,11 +34,9 @@ function closemenu(){
             </ul>
         </div>
       </div>
-     
-
             <button className=""onClick={openmenu} > <IoIosMenu className="lg:hidden w-8 h-auto text-[rgb(241,141,59)] hover:text-white hover:scale-110 duration-300"/> </button>
-           { open && <div className="lg:hidden bg-[#1b1919] w-full  absolute z-10 h-[60rem]  ">
-              <button className="absolute end-1 p-5" onClick={closemenu}><HiXMark className="w-8 h-auto  text-[rgb(241,141,59)] hover:text-white hover:scale-110 duration-300"/></button>
+           { open && <div className="lg:hidden bg-[#1b1919] w-full  absolute z-10 h-screen flex-grow ">
+              <button className="absolute end-0 py-5" onClick={closemenu}><HiXMark className="w-8 h-auto  text-[rgb(241,141,59)] hover:text-white hover:scale-110 duration-300"/></button>
                <div className="mt-44 flex flex-col gap-5 p-5 text-center text-3xl">
                <a href="#Home" onClick={closemenu} className="px-4 hover:text-[rgb(241,141,59)] hover:scale-110 duration-300 ">Home</a>
                 <a href="#ABOUT" onClick={closemenu} className="hover:text-[rgb(241,141,59)] hover:scale-110 duration-300">About</a>

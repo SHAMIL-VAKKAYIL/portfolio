@@ -50,16 +50,16 @@ const info=[{
         <h1 className=" flex justify-center text-white text-4xl mt-10"><h1 className='text-[rgb(241,141,59)]'>C</h1>ontac<h1 className='text-[rgb(241,141,59)]'>t</h1></h1><br /><br />
         <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2 xl:gap-x-8'>
           <div className="  ">
+            <form ref={form} onSubmit={sendEmail} action="" method="post" className="p-5 flex flex-col gap-5 md:border md:border-[rgb(241,141,59)] ">
           <p className="text-white text-xl">Get in <span className="text-[rgb(241,141,59)]">Touch</span></p>
-            <form ref={form} onSubmit={sendEmail} action="" method="post" className="p-10 flex flex-col gap-5 border border-[rgb(241,141,59)] ">
-              <input type="text" name="user_name" placeholder="Enter your name" className="rounded-sm p-2 bg-transparent text-white border border-[rgb(241,141,59)] " />
-              <input type="email" name="user_email" id="" placeholder="Enter your email" className="rounded-sm p-2 bg-transparent border text-white border-[rgb(241,141,59)]"/>
+              <input type="text" name="user_name" placeholder="Enter your name" className=" outline-none rounded-sm p-2 bg-transparent text-white border border-[rgb(241,141,59)] " />
+              <input type="email" name="user_email" id="" placeholder="Enter your email" className=" outline-none rounded-sm p-2 bg-transparent border text-white border-[rgb(241,141,59)]"/>
 
-             <textarea name="message" id="" cols="28" rows="8" placeholder="Enter your massege..." className="rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
-             <div></div>
-             <div className="flex justify-end ">
+             <textarea name="message" id="" cols="28" rows="8" placeholder="Enter your massege..." className= " outline-none rounded-sm p-2  bg-transparent border text-white border-[rgb(241,141,59)]"></textarea>
              <input type="submit" value="SEND" className="text-white bg-[rgb(241,141,59)] px-6 py-2 rounded-sm hover:brightness-110" />
-             </div>
+             <div></div>
+
+            
             </form>
           </div>
         <div>

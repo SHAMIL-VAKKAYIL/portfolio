@@ -6,9 +6,9 @@ function Service() {
       <div className=" sm:w-[80%]"><br /><br /><br />
 
         <h1 className=" flex justify-center text-white text-4xl mt-10"><h1 className='text-[rgb(241,141,59)]'>S</h1>ervice<h1 className='text-[rgb(241,141,59)]'>s</h1></h1>
-        <div className='mt-10 flex  gap-x-6 gap-y-10  justify-center'>
+        <div className='mt-10 flex  gap-x-6 gap-y-10  justify-center px-10 md:px-0'>
 
-        <div className=" w-[70%]  shadow-md border-4 border-white shadow-white rounded-md bg-gray-200 overflow-hidden ">
+        <div className=" md:w-[70%] p shadow-md border-4 border-white shadow-white rounded-md bg-gray-200 overflow-hidden ">
           <img
             src={web}
             alt=""
