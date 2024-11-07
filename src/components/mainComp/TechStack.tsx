@@ -56,7 +56,6 @@ function TechStack() {
             title='Bootstrap'
             icon={SiBootstrap}
           />
-
         </div>
       </div>
     </div>

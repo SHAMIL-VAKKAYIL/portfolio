@@ -26,8 +26,8 @@ function Hero() {
                 <div className="flex w-full gap-x-2   ">
                     <div className="bg-card border-secondary border-[2px] w-full  rounded-lg px-3 ">
                         <div className="flex items-center  font-bld text-2xl gap-x-3 bg-transparent mt-2">
-                            <h2 className="text-font bg-transparent">MY NAME IS </h2>
-                            <h2 className="text-primary bg-transparent ">MUHAMMED SHAMIL</h2>
+                            <h2 className="text-font bg-transparent">MY NAME IS <span className="text-primary bg-transparent "> MUHAMMED SHAMIL</span> </h2>
+                            {/* <h2 className="text-primary bg-transparent ">MUHAMMED SHAMIL</h2> */}
                         </div>
                         <div className=" flex flex-col gap-y-1 mt-1 bg-transparent">
                             <p className="font-med text-font flex gap-x-1 bg-transparent items-end"><SlLocationPin color="#58A6FF" size={25} className="bg-transparent " />Kerala, India</p>
@@ -38,7 +38,7 @@ function Hero() {
                             <button className="border-2 border-secondary rounded-lg font-sembld p-1 px-2">Dowenload CV</button>
                         </div>
                     </div>
-                    <div className=" ">
+                    <div className="md:flex hidden ">
                         <img src={mypng} alt="" />
                     </div>
                 </div>
@@ -66,7 +66,7 @@ function Hero() {
                         <p className="bg-transparent text-font font-nrml ">For frontend i choose  </p>
                         <div className="text-font font-nrml flex gap-1 bg-transparent items-center w-full    ">
                             <FaReact color="#F0F0F0" size={26} className="bg-transparent" />
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> React</p>,
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> React</p>.
                         </div>
                         <p className="bg-transparent text-font font-nrml mt-2">currently i’m learning </p>
                         <div className="text-font font-nrml flex gap-1 bg-transparent items-center mt-1 ">
