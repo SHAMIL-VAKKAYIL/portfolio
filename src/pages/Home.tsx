@@ -1,13 +1,13 @@
 import Hero from '../components/mainComp/Hero'
 import TechStack from '../components/mainComp/TechStack'
-import Project from '../components/mainComp/Project'
+import ProjectComp from '../components/mainComp/ProjectComp'
 
 function Home() {
   return (
     <div className='mt-[5%] mb-[5%]'>
       <Hero />
       <TechStack />
-      <Project />
+      <ProjectComp />
     </div>
   )
 }
