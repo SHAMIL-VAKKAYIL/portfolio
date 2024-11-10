@@ -1,4 +1,5 @@
 import React from 'react'
+import { GoArrowRight } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 
 interface IProjectCardComp {
@@ -18,17 +19,20 @@ function ProjectCardComp({ Techs, title, description, image, descClass, gridstyl
 
     return (
         <div className=''>
-            <div className={`  gap-3 border-2  border-secondary md:border-0 rounded-lg p-3 md:p-0 overflow-hidden w-full  object-fill  ${gridstyle}`}>
-                <div className='w-full'>
-                    <img src={image} alt="" className={` ${imageStyle} w-full  rounded-lg object-cover shadow-md shadow-gray-800 `} />
+            <div className={` items-center gap-3 border-2  border-secondary md:border-0 rounded-lg p-3 md:p-0 overflow-hidden w-full  object-fill  ${gridstyle}`}>
+                <div className='w-full mb-2 relative'>
+                    <img src={image} alt="" className={` ${imageStyle} w-full  rounded-lg object-cover  border-2 border-secondary`} />
+                    <a href={path}>
+                    <GoArrowRight size={20} color='#f0f0f0' strokeWidth={1} className='absolute top-1 right-1 bg-transparent hover:scale-125 transition-transform' />
+                    </a>
                 </div>
                 <div className=' text-font font-nrml flex flex-col gap-2 bg-transparent h-full  '>
-                    <div className=' flex flex-col justify-between h-full gap-2 '>
+                    <div className=' flex flex-col justify-between  h-full gap-2'>
                         <div>
                             <a href={path}>
-                                <h3 className='bg-transparent font-med md:text-xl mb-2 '>{title}</h3>
+                                <h3 className='bg-transparent font-med md:text-xl mb-2 hover:text-primary transition-transform  '>{title}</h3>
                             </a>
-                            <div className=' scrollbar overflow-y-scroll  md:border-2 bg-transparent border-secondary rounded-lg  p-3  2xl:h-[18vh]'>
+                            <div className=' scrollbar overflow-y-scroll  md:border-2 bg-transparent border-secondary rounded-lg hover:border-primary transition-transform  p-3  2xl:h-[18vh]'>
                                 <div>
                                     <p className='bg-transparent lg:hidden xl:flex'>{description}</p>
                                 </div>

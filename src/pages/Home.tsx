@@ -1,6 +1,7 @@
 import Hero from '../components/mainComp/Hero'
 import TechStack from '../components/mainComp/TechStack'
 import ProjectComp from '../components/mainComp/ProjectComp'
+import Contact from '../components/mainComp/Contact'
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <TechStack />
       <ProjectComp />
+      <Contact />
     </div>
   )
 }
