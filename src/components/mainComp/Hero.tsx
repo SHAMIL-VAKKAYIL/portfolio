@@ -43,7 +43,7 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 gap-x-2 bg-transparent w-full  overflow-hidden ">
+            <div className="grid md:grid-cols-3 gap-2 bg-transparent w-full  overflow-hidden ">
                 {/* Backend */}
                 <div className="bg-card border-2 border-secondary rounded-lg  flex flex-col p-3">
                     <h3 className="font-bld text-primary text-xl bg-transparent ">Backend</h3>
