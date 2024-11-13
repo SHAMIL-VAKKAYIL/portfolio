@@ -5,9 +5,9 @@ import { TbBrandReactNative } from 'react-icons/tb'
 function TechStack() {
   return (
     <div className='  mx-auto sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2 mt-2'>
-      <div className='w-full  border-2 border-secondary p-3 rounded-lg '>
+      <div className='w-full  border-2 border-secondary p-3 rounded-lg bg-card'>
         <h3 className='font-bld text-white text-xl bg-transparent '>Tech stacks </h3>
-        <div className='flex flex-wrap gap-5 mt-5 justify-center '>
+        <div className='flex flex-wrap gap-5 mt-5 justify-center bg-transparent'>
           <TechComp
             title='Javascript'
             icon={SiJavascript}

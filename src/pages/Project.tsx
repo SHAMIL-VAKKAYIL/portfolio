@@ -51,11 +51,11 @@ function Project() {
   return (
 
     <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col   gap-y-2">
-      <div className="border-2 border-secondary p-3 mt-3 rounded-lg mb-3">
+      <div className="border-2 border-secondary p-3 mt-3 rounded-lg mb-3 bg-card">
         <div className='bg-transparent rounded-lg '>
           <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
         </div>
-        <div className='grid lg:grid-cols-2 lg:gap-3'>
+        <div className='grid lg:grid-cols-2 lg:gap-3 bg-transparent'>
           {Projects.map((project) => {
             return (
               <div key={project.id} className="mt-5 flex flex-col gap-7">

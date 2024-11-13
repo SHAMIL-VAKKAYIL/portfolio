@@ -48,14 +48,14 @@ const [hover, sethover] = useState(false)
   }
   return (
     <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col   gap-y-2">
-      <div className="border-2 border-secondary p-3 mt-3 rounded-lg">
+      <div className="border-2 border-secondary p-3 mt-2 bg-card rounded-lg">
         <div className='  bg-transparent rounded-lg '>
           <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
         </div>
-        <div className="mt-5 flex flex-col gap-7">
+        <div className="mt-5 flex flex-col gap-7 bg-transparent">
           {Projects.map((project) => {
             return (
-              <div key={project.id} className="mt-5 flex flex-col gap-7">
+              <div key={project.id} className="mt-5 flex flex-col gap-7 ">
                 <ProjectCardComp
                   description={project.desc}
                   path={project.path}
@@ -72,9 +72,9 @@ const [hover, sethover] = useState(false)
           }
         </div>
         <Link to='/projects'>
-          <div className="flex justify-end items-center text-white transition-transform gap-1  mt-3 hover:text-primary">
+          <div className="flex justify-end items-center text-white transition-transform gap-1  mt-3 hover:text-primary bg-transparent">
             <h3 className="font-med   bg-transparent -mt-0.5">More</h3>
-            <GoArrowRight  size={15} color={`${hover?'#58A6FF':'#f0f0f0'}`} onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1}/>
+            <GoArrowRight  size={15} color={`${hover?'#58A6FF ':'#f0f0f0'}`} className="bg-transparent" onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1}/>
           </div>
         </Link>
       </div>
