@@ -1,6 +1,6 @@
-import React from 'react'
 import { GoArrowRight } from 'react-icons/go'
-import { Link } from 'react-router-dom'
+import {motion} from 'framer-motion'
+
 
 interface IProjectCardComp {
     Techs: string[]
@@ -42,7 +42,7 @@ function ProjectCardComp({ Techs, title, description, image, descClass, gridstyl
                             </div>
                         </div>
                         {/* Techs */}
-                        <div className='bg-transparent md:py-2 md:px-2'>
+                        <div className='bg-transparent md:py-2'>
 
                             <div className=' flex bg-transparent  flex-wrap 2xl:flex-nowrap  text-font md:gap-3 gap-1 font-med md:border-2 border-secondary rounded-lg p-2 2xl:overflow-x-scroll scrollbar  '>
                                 {Techs.map((item) => {
