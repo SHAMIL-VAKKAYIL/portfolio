@@ -44,9 +44,9 @@ function Hero() {
                         </div>
                         <div className=" flex flex-col gap-y-1 mt-1 bg-transparent">
                             <p className="font-med text-font flex gap-x-1 bg-transparent items-end">
-                                <motion.div>
+                                <div>
                                     <SlLocationPin color="#58A6FF" size={25} className="bg-transparent " />
-                                </motion.div>
+                                </div>
                                 Kerala, India</p>
                             <p className="font-med text-font  bg-transparent">I’m a Mern-stack developer,</p>
                             <p className="font-med text-font  bg-transparent">I specialize in frontend development</p>
@@ -54,6 +54,7 @@ function Hero() {
                         <motion.div className="text-font text-sm bg-transparent flex justify-end "
                             initial={{ y: -50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
+                            whileHover={{ scale: 1.1 ,x:-45 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <button className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</button>

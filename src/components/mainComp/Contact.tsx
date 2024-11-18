@@ -4,6 +4,7 @@ import { SiFacebook, SiGmail, SiInstagram, SiLinkedin } from 'react-icons/si'
 
 
 function Contact() {
+  
   return (
     <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col mt-2 ">
       <div className='border-2 border-secondary rounded-lg p-3 bg-card'>

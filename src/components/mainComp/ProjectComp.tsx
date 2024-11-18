@@ -35,19 +35,19 @@ const Projects = [
 
 function ProjectComp() {
 
-  
-
-const [hover, sethover] = useState(false)
 
 
-  const btnhover=()=>{
+  const [hover, sethover] = useState(false)
+
+
+  const btnhover = () => {
     sethover(true)
   }
-  const btnhoverrem=()=>{
+  const btnhoverrem = () => {
     sethover(false)
   }
   return (
-    <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col   gap-y-2">
+    <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col   gap-y-2" >
       <div className="border-2 border-secondary p-3 mt-2 bg-card rounded-lg">
         <div className='  bg-transparent rounded-lg '>
           <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
@@ -74,7 +74,7 @@ const [hover, sethover] = useState(false)
         <Link to='/projects'>
           <div className="flex justify-end items-center text-white transition-transform gap-1  mt-3 hover:text-primary bg-transparent">
             <h3 className="font-med   bg-transparent -mt-0.5">More</h3>
-            <GoArrowRight  size={15} color={`${hover?'#58A6FF ':'#f0f0f0'}`} className="bg-transparent" onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1}/>
+            <GoArrowRight size={15} color={`${hover ? '#58A6FF ' : '#f0f0f0'}`} className="bg-transparent" onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1} />
           </div>
         </Link>
       </div>
