@@ -25,7 +25,9 @@ function Hero() {
                             whileHover={{ scale: 1.1 }}
                         >
                             <div className="bg-transparent">
-                                <BsGithub size={26} color="#F0F0F0" className="bg-transparent" />
+                                <a href="https://github.com/SHAMIL-VAKKAYIL" className="bg-transparent">
+                                    <BsGithub size={26} color="#F0F0F0" className="bg-transparent" />
+                                </a>
                             </div>
                         </motion.div>
                         <motion.div className="bg-card  border-secondary hover:border-primary border-[2px] p-2 rounded-[10px] flex items-center justify-center "
@@ -54,7 +56,6 @@ function Hero() {
                         <motion.div className="text-font text-sm bg-transparent flex justify-end "
                             initial={{ y: -50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            whileHover={{ scale: 1.1 ,x:-45 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <button className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</button>

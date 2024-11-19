@@ -1,22 +1,54 @@
-import { SiBootstrap, SiExpress, SiFigma, SiGit, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiRedux, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiBootstrap, SiExpress, SiFigma, SiFramer, SiGit, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiRedux, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { TbBrandReactNative } from 'react-icons/tb'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import TechComp from '../normalComp/TechComp'
+import { useRef } from 'react'
 
 function TechStack() {
+
+  const containerRef = useRef(null)
+  const isInView = useInView(containerRef, { once: true })
+
+  //! container section
+  const containerVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
+    }
+  }
+  //! tech section
+  const techVariant = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1,
+
+    }
+
+  }
+
   return (
-    <motion.div className='  mx-auto sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2 mt-2'
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
+    <motion.div
+      ref={containerRef}
+      className='  mx-auto sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2 mt-2'
+
     >
       <div className='w-full  border-2 border-secondary p-3 rounded-lg bg-card'>
         <h3 className='font-bld text-white text-xl bg-transparent '>Tech stacks </h3>
-        <div className='flex flex-wrap gap-5 mt-5 justify-center bg-transparent'>
+        <motion.div
+          className='flex flex-wrap gap-5 mt-5 justify-center bg-transparent'
+          variants={containerVariant}
+          initial='hidden'
+          animate={isInView ? 'visible' : ' hidden'}
+
+        >
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
 
@@ -26,9 +58,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
 
@@ -38,9 +71,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
 
@@ -50,9 +84,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
 
@@ -62,9 +97,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
 
@@ -74,9 +110,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
 
@@ -86,9 +123,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
 
@@ -98,9 +136,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 0.9 }}
           >
 
@@ -110,9 +149,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 1 }}
           >
 
@@ -122,9 +162,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 1.1 }}
           >
 
@@ -134,9 +175,10 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
 
@@ -146,9 +188,23 @@ function TechStack() {
             />
           </motion.div>
           <motion.div
+            variants={techVariant}
             className='bg-transparent'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 1.2 }}
+          >
+
+            <TechComp
+              title='Framer'
+              icon={SiFramer}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 0.8, delay: 1.3 }}
           >
 
@@ -157,7 +213,7 @@ function TechStack() {
               icon={SiBootstrap}
             />
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   )
