@@ -1,4 +1,3 @@
-import { GoArrowRight } from 'react-icons/go'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
