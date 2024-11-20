@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 function Hero() {
     return (
-        <motion.div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2"
+        <motion.div className=" mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -34,7 +34,9 @@ function Hero() {
                             whileHover={{ scale: 1.1 }}
                         >
                             <div className="bg-transparent">
-                                <BsLinkedin size={26} color="#F0F0F0" className="bg-transparent" />
+                                <a href="https://linkedin.com/in/muhammed-shamil-a21154237" className="bg-transparent">
+                                    <BsLinkedin size={26} color="#F0F0F0" className="bg-transparent" />
+                                </a>
                             </div>
                         </motion.div>
                     </div>

@@ -32,7 +32,7 @@ function TechStack() {
   return (
     <motion.div
       ref={containerRef}
-      className='  mx-auto sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2 mt-2'
+      className='  mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2 mt-2'
 
     >
       <div className='w-full  border-2 border-secondary p-3 rounded-lg bg-card'>

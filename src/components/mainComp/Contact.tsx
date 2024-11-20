@@ -25,7 +25,7 @@ function Contact() {
   return (
     <div
       ref={containerRef}
-      className="mx-auto sm:w-[85%] lg:w-[70%] flex flex-col mt-2"
+      className="mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col mt-2"
     >
       <motion.div
         className="border-2 border-secondary rounded-lg p-3 bg-card"
@@ -65,7 +65,7 @@ function Contact() {
               
             >
               <a
-                href=""
+                href="https://linkedin.com/in/muhammed-shamil-a21154237"
                 className="flex flex-col items-center justify-center gap-2 bg-transparent h-full"
               >
                 <SiLinkedin size={40} color="#f0f0f0" />
