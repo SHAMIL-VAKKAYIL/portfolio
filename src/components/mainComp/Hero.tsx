@@ -10,9 +10,7 @@ import { motion } from "framer-motion"
 function Hero() {
     return (
         <motion.div className=" mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
+            
         >
             <div className="w-full flex flex-col gap-3 ">
                 <motion.div className="flex justify-end items-center"
