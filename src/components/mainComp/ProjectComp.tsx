@@ -14,6 +14,14 @@ const Projects = [
 
   },
   {
+    id: 4,
+    title: 'Netflix_clone',
+    desc: 'The Netflix clone is a fully responsive web application replicating key features of Netflix. It allows users to securely sign up or log in using Firebase Authentication. Real-time movie and TV show data is fetched from the TMDB API and displayed in categories like Trending and Top Rated. The sleek, Netflix-inspired design includes interactive elements like scrollable carousels and hover effects for additional details.',
+    image: 'https://images.unsplash.com/photo-1615986201152-7686a4867f30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG5ldGZsaXh8ZW58MHx8MHx8fDA%3D',
+    Techs: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
+    path: 'https://github.com/SHAMIL-VAKKAYIL/netflix_clone'
+  },
+  {
     id: 2,
     title: 'Global Recipe Finder',
     desc: 'The Food Recipe Web App is a culinary exploration tool that provides users with various recipes from around the world. Using the MealDB API, the app fetches detailed recipes, including ingredients, instructions, and images, helping users discover and try new dishes.  making meal planning and cooking easier and more exciting',
@@ -73,9 +81,9 @@ function ProjectComp() {
         </div>
         <Link to='/projects'>
           <div className="flex justify-end  text-white transition-transform   mt-3  bg-transparent ">
-            <div className="border-2 border-secondary rounded-lg flex items-center px-4 py-1 hover:border-primary group gap-1 justify-around"> 
-            <h3 className="font-med group-hover:text-primary bg-transparent -mt-0.5">More</h3>
-            <GoArrowRight size={15} color={`${hover ? '#58A6FF ' : '#f0f0f0'}`} className="bg-transparent" onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1} />
+            <div className="border-2 border-secondary rounded-lg flex items-center px-4 py-1 hover:border-primary group gap-1 justify-around">
+              <h3 className="font-med group-hover:text-primary bg-transparent -mt-0.5">More</h3>
+              <GoArrowRight size={15} color={`${hover ? '#58A6FF ' : '#f0f0f0'}`} className="bg-transparent" onMouseEnter={btnhover} onMouseLeave={btnhoverrem} strokeWidth={1} />
             </div>
           </div>
         </Link>
