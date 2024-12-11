@@ -51,7 +51,7 @@ function Hero() {
                                 </div>
                                 Kerala, India</p>
                             <p className="font-med text-font  bg-transparent">I’m a Mern-stack developer,</p>
-                            <p className="font-med text-font  bg-transparent">I specialize in frontend development</p>
+                            <p className="font-med text-font  bg-transparent">I specialize in both frontend and backend development</p>
                         </div>
                         <motion.div className="text-font text-sm bg-transparent flex justify-end "
                             initial={{ y: -50, opacity: 0 }}
