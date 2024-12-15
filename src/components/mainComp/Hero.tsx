@@ -8,9 +8,10 @@ import { motion } from "framer-motion"
 
 
 function Hero() {
+
     return (
         <motion.div className=" mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col justify-center items-center gap-y-2"
-            
+
         >
             <div className="w-full flex flex-col gap-3 ">
                 <motion.div className="flex justify-end items-center"
@@ -58,7 +59,10 @@ function Hero() {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <button className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</button>
+                            <a
+                             href="/shamilMernStackResume.pdf"
+                             download='shamilMernStackResume.pdf'
+                            className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</a>
                         </motion.div>
                     </div>
                     <div className="md:flex hidden ">
