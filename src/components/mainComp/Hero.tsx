@@ -48,9 +48,9 @@ function Hero() {
                         </div>
                         <div className=" flex flex-col gap-y-1 mt-1 bg-transparent">
                             <p className="font-med text-font flex gap-x-1 bg-transparent items-end">
-                                <div>
+                                <span>
                                     <SlLocationPin color="#58A6FF" size={25} className="bg-transparent " />
-                                </div>
+                                </span>
                                 Kerala, India</p>
                             <p className="font-med text-font  bg-transparent">I’m a Mern-stack developer,</p>
                             <p className="font-med text-font  bg-transparent">I specialize in both frontend and backend development</p>
