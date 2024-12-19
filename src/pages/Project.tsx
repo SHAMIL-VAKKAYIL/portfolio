@@ -8,7 +8,7 @@ function Project() {
     {
       id: 1,
       title: 'Game Explore',
-      desc: 'The Game Store App is an interactive web application designed to showcase a variety of video games, allowing users to explore games based on different genres, popularity. By integrating the RAWG API, the app pulls real-time data on the latest and trending games, giving users up-to-date information. The app features intuitive navigation, and a wishlist feature',
+      desc: 'The Game Store App is an interactive web application designed to showcase a variety of video games, allowing users to explore games based on different genres and popularity. By integrating the RAWG API, the app pulls real-time data ,users can search games , giving users up-to-date information. It features intuitive navigation, a wishlist feature, and detailed game information to enhance the user experience.',
       image: 'https://img.freepik.com/free-photo/view-3d-video-game-controller_23-2151005792.jpg?t=st=1731032470~exp=1731036070~hmac=e8e8e48bfb2b89b1dc9bdb296320075786a0c1a6f8fa1e1d04dba6a9d5b018f9&w=900',
       Techs: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind'],
       path: 'https://github.com/SHAMIL-VAKKAYIL/game_store'
