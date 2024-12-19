@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { BsEyeFill, BsGithub } from 'react-icons/bs'
 
 
 interface IProjectCardComp {
@@ -10,10 +11,11 @@ interface IProjectCardComp {
     descClass?: string
     gridstyle?: string
     imageStyle?: string
+    live?: string
     path: string
 }
 
-function ProjectCardComp({ Techs, title, description, image, descClass, gridstyle, imageStyle, path }: IProjectCardComp) {
+function ProjectCardComp({ Techs, title, description, image, descClass, gridstyle, imageStyle, live, path }: IProjectCardComp) {
 
     const constainerRef = useRef(null)
     const isInView = useInView(constainerRef, { once: true })
@@ -43,15 +45,23 @@ function ProjectCardComp({ Techs, title, description, image, descClass, gridstyl
                     animate={isInView ? 'visible' : 'hidden'}
 
                 >
+                    <div className=' flex gap-2 absolute right-2 top-2 bg-transparent'>
+                        <a href={path} className='border-2 border-secondary bg-secondary hover:bg-background rounded-md p-2'>
+                            <BsGithub size={20} color="#F0F0F0" className="bg-transparent" />
+                        </a>
+                        <a href={live} className='border-2 border-secondary bg-secondary hover:bg-background rounded-md p-2'>
+                            <BsEyeFill size={20} color="#F0F0F0" className="bg-transparent" />
+                        </a>
+                    </div>
                     <img src={image} alt="" className={` ${imageStyle} w-full  rounded-lg object-cover  border-2 border-secondary `} />
-                    
+
                 </motion.div>
                 <div className=' text-font font-nrml flex flex-col gap-2  h-full  '>
                     <div className=' flex flex-col justify-between  h-full gap-2  bg-card'>
                         <div className='bg-transparent'>
-                            <a href={path}>
-                                <h3 className='bg-transparent font-med md:text-xl mb-2 hover:text-primary transition-transform  '>{title}</h3>
-                            </a>
+
+                            <h3 className='bg-transparent font-med md:text-xl mb-2 hover:text-primary transition-transform  '>{title}</h3>
+
                             <motion.div
                                 className=' scrollbar overflow-y-scroll  md:border-2  border-secondary rounded-lg hover:border-primary transition-transform  p-3  2xl:h-[18vh] bg-transparent'
 
@@ -62,7 +72,7 @@ function ProjectCardComp({ Techs, title, description, image, descClass, gridstyl
                                     animate={isInView ? 'visible' : 'hidden'}
 
                                 >
-                                    <p className=' lg:hidden xl:flex bg-card'>{description}</p>
+                                    <p className=' flex   bg-card'>{description}</p>
                                 </motion.div>
                                 <motion.div
                                     className={`${descClass}`}
@@ -71,7 +81,7 @@ function ProjectCardComp({ Techs, title, description, image, descClass, gridstyl
                                     animate={isInView ? 'visible' : 'hidden'}
 
                                 >
-                                    <p className=' lg:flex xl:hidden hidden bg-card'>{description.split('').slice(0, 200).join('')} ...</p>
+                                    <p className=' xl:hidden hidden bg-card'>{description.split('').slice(0, 200).join('')} ...</p>
                                 </motion.div>
                             </motion.div>
                         </div>

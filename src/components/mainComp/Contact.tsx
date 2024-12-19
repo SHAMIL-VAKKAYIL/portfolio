@@ -37,13 +37,13 @@ function Contact() {
           Get in Touch
         </h3>
         <motion.div
-          className="h-[25vh] grid md:grid-cols-2 gap-2 mt-5 bg-transparent"
+          className=" flex  gap-2 mt-5 bg-transparent"
           variants={containerVariants}
         >
-          <div className="grid grid-cols-2 gap-2 bg-transparent">
+          <div className="flex  gap-2 bg-transparent">
             {/* GitHub Card */}
             <motion.div
-              className="border-2 border-secondary hover:border-primary rounded-lg w-full"
+              className="border-2 flex-1 border-secondary hover:border-primary rounded-lg w-full px-2"
               variants={cardVariants}
               
             >
@@ -53,14 +53,14 @@ function Contact() {
               >
                 <BsGithub size={40} color="#f0f0f0" />
                 <h2 className="hidden md:flex font-med text-xl text-font cursor-pointer transition-transform text-center">
-                  shamil-vakkayil
+                  shamil-vakkayil 
                 </h2>
               </a>
             </motion.div>
 
             {/* LinkedIn Card */}
             <motion.div
-              className="border-2 border-secondary hover:border-primary rounded-lg "
+              className="flex-1 border-2 border-secondary hover:border-primary rounded-lg"
               variants={cardVariants}
               
             >
@@ -77,10 +77,10 @@ function Contact() {
           </div>
 
           {/* Gmail and Instagram */}
-          <div className="flex flex-col gap-2 h-full bg-transparent">
+          <div className="flex flex-1  flex-col gap-2 h-full bg-transparent">
             {/* Gmail Card */}
             <motion.div
-              className="border-2 border-secondary hover:border-primary h-[40%] rounded-lg"
+              className="border-2  border-secondary hover:border-primary h-[40%] rounded-lg py-5 px-2"
               variants={cardVariants}
               
             >
@@ -97,7 +97,7 @@ function Contact() {
 
             {/* Instagram Card */}
             <motion.div
-              className="h-[60%] border-2 border-secondary hover:border-primary rounded-lg "
+              className="h-[60%]  border-2 border-secondary hover:border-primary rounded-lg py-5"
               variants={cardVariants}
               
             >

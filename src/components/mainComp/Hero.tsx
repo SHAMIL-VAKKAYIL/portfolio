@@ -4,6 +4,7 @@ import { SlLocationPin } from "react-icons/sl"
 import { FaNodeJs, FaReact } from "react-icons/fa"
 import { SiBootstrap, SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 
 
@@ -53,6 +54,7 @@ function Hero() {
                                 Kerala, India</p>
                             <p className="font-med text-font  bg-transparent">I’m a Mern-stack developer,</p>
                             <p className="font-med text-font  bg-transparent">I specialize in both frontend and backend development</p>
+                            <p className="font-med text-font  bg-transparent"> All of my projects are available. <Link to='/projects' className="cursor-pointer text-primary">Here</Link></p>
                         </div>
                         <motion.div className="text-font text-sm bg-transparent flex justify-end "
                             initial={{ y: -50, opacity: 0 }}
@@ -60,13 +62,13 @@ function Hero() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <a
-                             href="/shamilMernStackResume.pdf"
-                             download='shamilMernStackResume.pdf'
-                            className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</a>
+                                href="/shamilMernStackResume.pdf"
+                                download='shamilMernStackResume.pdf'
+                                className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</a>
                         </motion.div>
                     </div>
                     <div className="md:flex hidden ">
-                        <img src={mypng} alt="" />
+                        <img src={mypng} alt="" className="object-cover rounded-lg" />
                     </div>
                 </div>
             </div>

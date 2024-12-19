@@ -15,6 +15,16 @@ function Project() {
 
     },
     {
+      id: 2,
+      title: 'Digital Diary ',
+      desc: 'The Digital Diary application enables users to create and manage their daily entries with ease, allowing them to attach images to complement their content. Users can view their entire diary in an organized format and utilize advanced filtering options to locate specific entries by date. The project also includes session-based authentication to ensure user data remains private and secure, providing a seamless and safe experience.',
+      image: 'https://img.freepik.com/free-photo/still-life-with-lamp-pen-lantern-book_188544-8807.jpg?uid=R138940299&ga=GA1.1.361786185.1733717915&semt=ais_hybrid',
+      Techs: ['Express.js', 'JavaScript', 'Handlebars.js', 'MongoDB', 'Multer'],
+      live: '',
+      path: 'https://github.com/SHAMIL-VAKKAYIL/digi_dairy-express'
+  
+    },
+    {
       id: 6,
       title: 'Netflix_clone',
       desc: 'The Netflix clone is a fully responsive web application replicating key features of Netflix. It allows users to securely sign up or log in using Firebase Authentication. Real-time movie and TV show data is fetched from the TMDB API and displayed in categories like Trending and Top Rated. The sleek, Netflix-inspired design includes interactive elements like scrollable carousels and hover effects for additional details.',
@@ -23,11 +33,11 @@ function Project() {
       path: 'https://github.com/SHAMIL-VAKKAYIL/netflix_clone'
     },
     {
-      id: 2,
+      id: 7,
       title: 'Global Recipe Finder',
       desc: 'The Food Recipe Web App is a culinary exploration tool that provides users with various recipes from around the world. Using the MealDB API, the app fetches detailed recipes, including ingredients, instructions, and images, helping users discover and try new dishes.  making meal planning and cooking easier and more exciting',
       image: 'https://img.freepik.com/free-photo/top-view-tasty-meat-soup-with-potatoes-seasonings-dark-desk_140725-76947.jpg?t=st=1731032564~exp=1731036164~hmac=a9e25f984aa75bfbcd1434c7f96417c7026df3f66fc75e786c112ec883684eba&w=900',
-      Techs: ['React', 'JavaScript', 'Redux'],
+      Techs: ['React', 'JavaScript', 'context API'],
       path: 'https://github.com/SHAMIL-VAKKAYIL/food_recipe-web'
     },
     {
@@ -50,7 +60,7 @@ function Project() {
       id: 5,
       title: 'Weather Now',
       desc: 'The Weather Web App is a simple and efficient tool that helps users stay updated on current weather conditions. By entering a city name, users can quickly view the current temperature, weather description, and other essential information. This project uses a weather API to fetch real-time weather data, offering users a straightforward way to check the weather in any location.',
-      image: 'https://img.freepik.com/free-vector/weather-concept-illustration_114360-1189.jpg?t=st=1731033106~exp=1731036706~hmac=9069682e502b195578507e6ac332d49fc13b88e568f1d481936330f82ed7ab41&w=740',
+      image: 'https://img.freepik.com/free-photo/young-child-enjoying-childhood-happiness-by-playing-puddle-water-after-rain_23-2151469978.jpg?uid=R138940299&ga=GA1.1.361786185.1733717915&semt=ais_hybrid',
       Techs: ['React', 'JavaScript', 'Tailwind'],
       path: 'https://github.com/SHAMIL-VAKKAYIL/weather_app'
     },
@@ -58,20 +68,21 @@ function Project() {
 
   return (
 
-    <div className=" mx-auto sm:w-[85%] lg:w-[70%] flex flex-col   gap-y-2">
+    <div className=" mx-auto sm:w-[85%] lg:w-[75%] flex flex-col   gap-y-2">
       <div className="border-2 border-secondary p-3 mt-3 rounded-lg mb-3 bg-card">
         <div className='bg-transparent rounded-lg '>
           <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
         </div>
-        <div className='grid lg:grid-cols-2 lg:gap-3 bg-transparent'>
+        <div className=' lg:gap-3 bg-transparent'>
           {Projects.map((project) => {
             return (
               <div key={project.id} className="mt-5 flex flex-col gap-7">
                 <ProjectCardComp
                   description={project.desc}
+                  live={project.live}
                   path={project.path}
                   descClass='hidden'
-                  imageStyle="md:h-[40vh] lg:h-full xl:h-[40vh]"
+                  imageStyle="md:h-[20vh] "
                   image={project.image}
                   Techs={project.Techs}
                   title={project.title}
