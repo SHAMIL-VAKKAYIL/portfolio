@@ -56,6 +56,7 @@ function Hero() {
                             <p className="font-med text-font  bg-transparent">I specialize in both frontend and backend development</p>
                             <p className="font-med text-font  bg-transparent"> All of my projects are available. <Link to='/projects' className="cursor-pointer text-primary">Here</Link></p>
                         </div>
+                        <br />
                         <motion.div className="text-font text-sm bg-transparent flex justify-end "
                             initial={{ y: -50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}

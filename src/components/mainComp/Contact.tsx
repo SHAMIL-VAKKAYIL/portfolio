@@ -60,7 +60,7 @@ function Contact() {
 
             {/* LinkedIn Card */}
             <motion.div
-              className="flex-1 border-2 border-secondary hover:border-primary rounded-lg"
+              className="flex-1 border-2 border-secondary hover:border-primary rounded-lg px-2"
               variants={cardVariants}
               
             >

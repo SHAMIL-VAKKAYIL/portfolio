@@ -64,19 +64,19 @@ function ProjectComp() {
         <div className='  bg-transparent rounded-lg '>
           <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
         </div>
-        <div className="mt-5 flex flex-col gap-7 bg-transparent">
+        <div className=' gap-3 bg-transparent  '>
           {Projects.map((project) => {
             return (
-              <div key={project.id} className="mt-5 flex flex-col gap-7 ">
+              <div key={project.id} className="mt-5 flex flex-col gap-7">
                 <ProjectCardComp
                   description={project.desc}
                   live={project.live}
                   path={project.path}
+                  descClass='hidden'
+                  imageStyle="md:h-[24vh]  lg:h-[40vh] "
                   image={project.image}
-                  imageStyle="md:h-[20vh]  xl:h-[20.4vh]"
                   Techs={project.Techs}
                   title={project.title}
-                  gridstyle="grid  "
                 />
 
               </div>
