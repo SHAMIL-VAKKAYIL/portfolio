@@ -1,15 +1,14 @@
 import Hero from '../components/mainComp/Hero'
 import TechStack from '../components/mainComp/TechStack'
-import ProjectComp from '../components/mainComp/ProjectComp'
-import Contact from '../components/mainComp/Contact'
+import MediaCard from '../components/mainComp/SocialMedia'
 
 function Home() {
   return (
-    <div className='mt-[5%] mb-[5%]'>
+    <div className='mt-[18%] md:mt-[5%] mb-[5%]'>
       <Hero />
       <TechStack />
-      <ProjectComp />
-      <Contact />
+      {/* <ProjectComp /> */}
+      <MediaCard />
     </div>
   )
 }

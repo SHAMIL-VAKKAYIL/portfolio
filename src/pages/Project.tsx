@@ -1,4 +1,4 @@
-import ProjectCardComp from '../components/normalComp/ProjectCardComp'
+import ProjectCardComp from '../components/reusable/ProjectCardComp'
 
 function Project() {
 
@@ -68,26 +68,22 @@ function Project() {
 
   return (
 
-    <div className=" mx-auto sm:w-[85%] lg:w-[75%] flex flex-col   gap-y-2">
-      <div className="border-2 border-secondary p-3 mt-3 rounded-lg mb-3 bg-card">
-        <div className='bg-transparent rounded-lg '>
-          <h3 className='font-bld text-white text-xl bg-transparent'>Projects</h3>
+    <div className="mt-[5%] mb-[5%] mx-auto sm:w-[85%] lg:w-[75%]  p-2">
+      <div className="border-2 border-secondary p-2 mt-3 rounded-lg mb-3 ">
+        <div className='bg-transparent rounded-lg mt-3 '>
+          <h3 className='font-bld text-white text-2xl  bg-transparent text-center'>Projects</h3>
         </div>
-        <div className=' gap-3 bg-transparent  l'>
+        <div className=' gap-3 bg-transparent w-full  flex flex-wrap  justify-center'>
           {Projects.map((project) => {
             return (
-              <div key={project.id} className="mt-5 flex flex-col gap-7">
+              <div key={project.id} className="mt-5 w-[300px] 2xl:w-[400px] flex gap-3 border-2 border-secondary rounded-lg grayscale hover:grayscale-0 hover:scale-105 ease-in-out transform transition-all duration-300">
                 <ProjectCardComp
                   description={project.desc}
                   live={project.live}
                   path={project.path}
-                  descClass='hidden'
-                  imageStyle="md:h-[24vh]  lg:h-[40vh] "
                   image={project.image}
-                  Techs={project.Techs}
                   title={project.title}
                 />
-
               </div>
             )
           })

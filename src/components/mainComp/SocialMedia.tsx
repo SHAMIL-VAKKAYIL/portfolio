@@ -28,7 +28,7 @@ function Contact() {
       className="mx-auto w-[95%] sm:w-[85%] lg:w-[70%] flex flex-col mt-2"
     >
       <motion.div
-        className="border-2 border-secondary rounded-lg p-3 bg-card"
+        className="border-2 border-secondary rounded-lg p-3 bg-card flex flex-col"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -40,10 +40,10 @@ function Contact() {
           className=" flex  gap-2 mt-5 bg-transparent"
           variants={containerVariants}
         >
-          <div className="flex  gap-2 bg-transparent">
+          <div className="flex flex-1  gap-2 bg-transparent">
             {/* GitHub Card */}
             <motion.div
-              className="border-2 flex-1 border-secondary hover:border-primary rounded-lg w-full px-2"
+              className="border-2  border-secondary hover:border-primary rounded-lg w-full px-2"
               variants={cardVariants}
               
             >
@@ -60,7 +60,7 @@ function Contact() {
 
             {/* LinkedIn Card */}
             <motion.div
-              className="flex-1 border-2 border-secondary hover:border-primary rounded-lg px-2"
+              className="flex border-2 border-secondary hover:border-primary rounded-lg w-full justify-center px-2"
               variants={cardVariants}
               
             >
