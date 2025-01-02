@@ -3,7 +3,7 @@ import { SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-function Contact() {
+function Socialmedia() {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true });
 
@@ -118,4 +118,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Socialmedia;
