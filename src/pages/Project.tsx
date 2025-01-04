@@ -1,4 +1,3 @@
-import { li } from 'framer-motion/client'
 import ProjectCardComp from '../components/reusable/ProjectCardComp'
 
 function Project() {
