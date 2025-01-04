@@ -34,7 +34,7 @@ function Socialmedia() {
         animate={isInView ? "visible" : "hidden"}
       >
         <h3 className="font-bld text-white text-xl bg-transparent">
-          Get in Touch
+        Connect with Me
         </h3>
         <motion.div
           className=" flex  gap-2 mt-5 bg-transparent"

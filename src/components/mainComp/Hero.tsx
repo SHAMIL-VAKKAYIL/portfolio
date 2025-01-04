@@ -1,5 +1,5 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs"
 import mypng from '../../assets/images/shamil 1.png'
+import { BsGithub, BsLinkedin } from "react-icons/bs"
 import { SlLocationPin } from "react-icons/sl"
 import { FaNodeJs, FaReact } from "react-icons/fa"
 import { SiBootstrap, SiExpress, SiTailwindcss } from "react-icons/si"
@@ -41,7 +41,7 @@ function Hero() {
                     </div>
                 </motion.div>
                 <div className="flex w-full gap-x-2   ">
-                    <div className="bg-card border-secondary border-[2px] w-full  rounded-lg px-3 py-2">
+                    <div className=" bg-card border-secondary border-[2px] w-full  rounded-lg px-3 py-2">
                         <div className="flex items-center  font-bld text-2xl gap-x-3 bg-transparent mt-2">
                             <h2 className="text-font bg-transparent">MY NAME IS <span className="text-primary bg-transparent "> MUHAMMED SHAMIL</span> </h2>
                         </div>
@@ -52,7 +52,7 @@ function Hero() {
                                 </span>
                                 Kerala, India</p>
                             <p className="font-med text-font  bg-transparent">I’m a Mern-stack developer,</p>
-                            <p className="font-med text-font  bg-transparent">I specialize in both frontend and backend development</p>
+                            <p className="font-med text-font  bg-transparent">I specialize in building scalable, user-centric applications with interactive frontends and robust backends, delivering high-performance solutions for complex and dynamic requirements.</p>
                         </div>
                         <br />
                         <motion.div className="text-font text-sm bg-transparent flex justify-end mt-2 md:mt-0"
@@ -66,8 +66,8 @@ function Hero() {
                                 className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Dowenload CV</a>
                         </motion.div>
                     </div>
-                    <div className="md:flex hidden ">
-                        <img src={mypng} alt="" className="object-cover rounded-lg" />
+                    <div className="md:flex  hidden">
+                        <img src={mypng} alt="" className="object-cover rounded-lg " />
                     </div>
                 </div>
             </div>
@@ -83,7 +83,6 @@ function Hero() {
                                 animate={{ rotate: 0, opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
                             >
-
                                 <FaReact color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
                             <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> React</p>.
