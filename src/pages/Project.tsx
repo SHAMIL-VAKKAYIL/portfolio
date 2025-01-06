@@ -84,7 +84,7 @@ function Project() {
         <div className=' gap-3 bg-transparent w-full  flex flex-wrap  justify-center mb-3'>
           {Projects.map((project) => {
             return (
-              <div key={project.id} className="mt-5 w-[40%]   flex gap-3 grayscale hover:grayscale-0 hover:scale-105 ease-in-out transform transition-all duration-300">
+              <div key={project.id} className="mt-5 md:w-[40%]   flex gap-3 grayscale hover:grayscale-0 hover:scale-105 ease-in-out transform transition-all duration-300">
                 <ProjectCardComp
                   description={project.desc}
                   live={project.live}
