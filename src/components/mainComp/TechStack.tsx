@@ -1,4 +1,5 @@
-import { SiBootstrap, SiExpress, SiFigma, SiFramer, SiGit, SiHandlebarsdotjs, SiJavascript, SiMongodb, SiNodedotjs, SiReact, SiRedux, SiSocketdotio, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiApachekafka, SiApollographql, SiBootstrap, SiDocker, SiExpress, SiFigma, SiFramer, SiGit, SiGraphql, SiHandlebarsdotjs, SiJavascript, SiMongodb, SiMui, SiNodedotjs, SiPostgresql, SiReact, SiReactrouter, SiRedis, SiRedux, SiRender, SiSocketdotio, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si'
+import { FaAws } from 'react-icons/fa'
 import { TbBrandReactNative } from 'react-icons/tb'
 import { motion, useInView } from 'framer-motion'
 import TechComp from '../reusable/TechComp'
@@ -220,6 +221,139 @@ function TechStack() {
             <TechComp
               title='Bootstrap'
               icon={SiBootstrap}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 1.6 }}
+          >
+            <TechComp
+              title='GraphQL'
+              icon={SiGraphql}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 1.7 }}
+          >
+            <TechComp
+              title=''
+              icon={FaAws}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 1.8 }}
+          >
+            <TechComp
+              title='Render'
+              icon={SiRender}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 1.9 }}
+          >
+            <TechComp
+              title='Apollo GraphQL'
+              icon={SiApollographql}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 2.0 }}
+          >
+            <TechComp
+              title='Apache Kafka'
+              icon={SiApachekafka}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 2.5 }}
+          >
+            <TechComp
+              title='React Router'
+              icon={SiReactrouter}
+            />
+          </motion.div>
+
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 2.9 }}
+          >
+            <TechComp
+              title='Postgres'
+              icon={SiPostgresql}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 3.0 }}
+          >
+            <TechComp
+              title='Redis'
+              icon={SiRedis}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 3.1 }}
+          >
+            <TechComp
+              title='Docker'
+              icon={SiDocker}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 3.2 }}
+          >
+            <TechComp
+              title='MUI'
+              icon={SiMui}
+            />
+          </motion.div>
+          <motion.div
+            variants={techVariant}
+            className='bg-transparent'
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            transition={{ duration: 0.8, delay: 3.7 }}
+          >
+            <TechComp
+              title='Vercel'
+              icon={SiVercel}
             />
           </motion.div>
         </motion.div>

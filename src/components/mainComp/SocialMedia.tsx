@@ -34,7 +34,7 @@ function Socialmedia() {
         animate={isInView ? "visible" : "hidden"}
       >
         <h3 className="font-bld text-white text-xl bg-transparent">
-        Connect with Me
+          Connect with Me
         </h3>
         <motion.div
           className=" flex  gap-2 mt-5 bg-transparent"
@@ -45,7 +45,7 @@ function Socialmedia() {
             <motion.div
               className="border-2  border-secondary hover:border-primary rounded-lg w-full px-2"
               variants={cardVariants}
-              
+
             >
               <a
                 href="https://github.com/SHAMIL-VAKKAYIL"
@@ -53,7 +53,7 @@ function Socialmedia() {
               >
                 <BsGithub size={40} color="#f0f0f0" />
                 <h2 className="hidden md:flex font-med text-xl text-font cursor-pointer transition-transform text-center">
-                  shamil-vakkayil 
+                  shamil-vakkayil
                 </h2>
               </a>
             </motion.div>
@@ -62,10 +62,10 @@ function Socialmedia() {
             <motion.div
               className="flex border-2 border-secondary hover:border-primary rounded-lg w-full justify-center px-2"
               variants={cardVariants}
-              
+
             >
               <a
-                href="https://linkedin.com/in/muhammed-shamil-a21154237"
+                href="https://linkedin.com/in/muhammedshamil07"
                 className="flex flex-col items-center justify-center gap-2 bg-transparent h-full"
               >
                 <SiLinkedin size={40} color="#f0f0f0" />
@@ -82,7 +82,7 @@ function Socialmedia() {
             <motion.div
               className="border-2  border-secondary hover:border-primary h-[40%] rounded-lg py-5 px-2"
               variants={cardVariants}
-              
+
             >
               <a
                 href="mailto:msvshamil470@gmail.com"
@@ -99,7 +99,7 @@ function Socialmedia() {
             <motion.div
               className="h-[60%]  border-2 border-secondary hover:border-primary rounded-lg py-5"
               variants={cardVariants}
-              
+
             >
               <a
                 href="https://www.instagram.com/shamil_vakkayil?igsh=bzh6MmxkOWo2c2t5"
