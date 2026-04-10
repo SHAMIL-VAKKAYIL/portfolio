@@ -49,8 +49,8 @@ function Hero() {
                                     <SlLocationPin color="#58A6FF" size={25} className="bg-transparent " />
                                 </span>
                                 Kerala, India</p>
-                            <p className="font-med text-font  bg-transparent">I’m a Software Engineer focused on Backend Architecture,</p>
-                            <p className="font-med text-font  bg-transparent">Specializing in high-throughput distributed systems and scalable microservices. Driven by a passion for data engineering, performance optimization, and resilient infrastructure.</p>
+                            <p className="font-med text-font  bg-transparent">I’m a Software Engineer focused on Backend Engineering,</p>
+                            <p className="font-med text-font  bg-transparent"> I build backend applications using Node.js and Express, focusing on API development and clean architecture. I also have exposure to service-based design and am actively learning microservices and scalable system patterns.</p>
                         </div>
                         <br />
                         <motion.div className="text-font text-sm bg-transparent flex justify-end mt-2 md:mt-0"
@@ -69,112 +69,83 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 gap-2 bg-transparent w-full  overflow-hidden ">
+            <div className="grid md:grid-cols-3 gap-3 bg-transparent w-full overflow-hidden">
                 {/* Backend Engineering */}
-                <div className="bg-card border-2 border-secondary rounded-lg  flex flex-col p-3   ">
-                    <h3 className="font-bld text-primary text-xl bg-transparent ">Backend Engineering</h3>
-                    <div className="bg-transparent mt-5 ">
-                        <p className="bg-transparent text-font font-nrml ">Robust & Modular with </p>
-                        <div className="text-font font-nrml flex gap-1 bg-transparent items-center w-full flex-wrap   ">
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.2 }}
-                            >
+                <motion.div
+                    className="bg-card border-2 border-secondary rounded-lg flex flex-col p-5 transition-all duration-300 hover:border-primary hover:-translate-y-1"
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                >
+                    <h3 className="font-bld text-primary text-xl bg-transparent">Backend Engineering</h3>
+                    <div className="bg-transparent mt-4">
+                        <p className="bg-transparent text-font font-nrml">Robust & Modular with</p>
+                        <div className="text-font font-nrml flex gap-2 bg-transparent items-center w-full flex-wrap mt-2">
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
                                 <FaNodeJs color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Node.js</p>,
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.3 }}
-                            >
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Node.js</p>,
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.3 }}>
                                 <SiExpress color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Express</p>,
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.4 }}
-                            >
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Express</p>,
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }}>
                                 <SiPostgresql color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Postgres</p>,
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.5 }}
-                            >
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Postgres</p>,
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }}>
                                 <SiTypescript color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> TS</p>.
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">TS</p>.
                         </div>
                     </div>
-                </div>
-                {/* Scalability */}
-                <div className="bg-card border-2 border-secondary rounded-lg  flex flex-col p-3">
-                    <h3 className="font-bld text-primary text-xl bg-transparent ">Scalability</h3>
-                    <div className="bg-transparent mt-5 ">
-                        <p className="bg-transparent text-font font-nrml">Distributed & Resilient with </p>
-                        <div className="text-font font-nrml flex gap-1 bg-transparent  items-center w-full flex-wrap   ">
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.2 }}
+                </motion.div>
 
-                            >
+                {/* Backend Concepts */}
+                <motion.div
+                    className="bg-card border-2 border-secondary rounded-lg flex flex-col p-5 transition-all duration-300 hover:border-primary hover:-translate-y-1"
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                    <h3 className="font-bld text-primary text-xl bg-transparent">Backend Concepts</h3>
+                    <div className="bg-transparent mt-4">
+                        <p className="bg-transparent text-font font-nrml">Caching, asynchronous processing, service-based architecture with</p>
+                        <div className="text-font font-nrml flex gap-2 bg-transparent items-center w-full flex-wrap mt-2">
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
                                 <SiApachekafka color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Kafka </p>,
-
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.3 }}
-                            >
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Kafka</p>,
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.3 }}>
                                 <SiRedis color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Redis</p>,
-
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.4 }}
-                            >
-                                <SiGraphql color="#F0F0F0" size={26} className="bg-transparent" />
-                            </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> GraphQL</p>.
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Redis</p>.
                         </div>
-
                     </div>
+                </motion.div>
 
-                </div>
                 {/* Frontend */}
-                <div className="bg-card border-2 border-secondary rounded-lg  flex flex-col p-3 ">
-                    <h3 className="font-bld text-primary text-xl bg-transparent ">Frontend</h3>
-                    <div className="bg-transparent mt-5 ">
-                        <p className="bg-transparent text-font font-nrml ">Responsive & Interactive with </p>
-                        <div className="text-font font-nrml flex gap-1 bg-transparent items-center w-full flex-wrap   ">
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.2 }}
-                            >
+                <motion.div
+                    className="bg-card border-2 border-secondary rounded-lg flex flex-col p-5 transition-all duration-300 hover:border-primary hover:-translate-y-1"
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.7 }}
+                >
+                    <h3 className="font-bld text-primary text-xl bg-transparent">Frontend</h3>
+                    <div className="bg-transparent mt-4">
+                        <p className="bg-transparent text-font font-nrml">Responsive & Interactive with</p>
+                        <div className="text-font font-nrml flex gap-2 bg-transparent items-center w-full flex-wrap mt-2">
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
                                 <FaReact color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> React</p>,
-                            <motion.div
-                                initial={{ rotate: 100, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                transition={{ duration: 0.8, delay: 0.3 }}
-                            >
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">React</p>,
+                            <motion.div initial={{ rotate: 100, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.3 }}>
                                 <SiTailwindcss color="#F0F0F0" size={26} className="bg-transparent" />
                             </motion.div>
-                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer"> Tailwind</p>.
+                            <p className="bg-transparent underline-offset-2 underline text-primary cursor-pointer">Tailwind</p>.
                         </div>
                     </div>
-                </div>
-
+                </motion.div>
             </div>
         </motion.div>
     )
