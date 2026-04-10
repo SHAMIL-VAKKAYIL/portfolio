@@ -1,4 +1,4 @@
-import  emailjs  from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { toast } from "react-toastify";
 
@@ -19,7 +19,7 @@ function Contact() {
     }
 
     emailjs
-      .sendForm('service_5ypozmm', 'template_20asp6e', form.current, {
+      .sendForm('service_81xdmhi', 'template_20asp6e', form.current, {
         publicKey: 'J8gpF6s3h7gkd-cJi',
       })
       .then(
