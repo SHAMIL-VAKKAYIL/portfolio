@@ -2,6 +2,7 @@ import ProjectCardComp from '../components/reusable/ProjectCardComp'
 import devChatImg from '../assets/images/dev_chat.png'
 import openSourceImg from '../assets/images/opensource_investment.png'
 import ecomImg from '../assets/images/ecom_microservice.png'
+import cabImg from '../assets/images/taxi.png'
 
 
 function Project() {
@@ -10,6 +11,14 @@ function Project() {
 
   const Projects = [
     {
+      id: 12,
+      title: 'Cab Booking Platform',
+      desc: 'Production-grade cab booking platform built as a Node.js microservices monorepo. Features real-time geospatial driver matching, Apache Kafka for event streaming, Redis for caching, PostgreSQL for persistence, and saga orchestration pattern for distributed transaction management.',
+      image: cabImg,
+      live: '',
+      path: 'https://github.com/SHAMIL-VAKKAYIL/cab-booking'
+    },
+    {
       id: 11,
       title: 'DevChat - Real-time Messaging',
       desc: 'A full-stack real-time messaging platform supporting encrypted one-to-one and group conversations. Built with a scalable Node.js/Socket.io backend and a responsive React frontend. Orchestrated across separate client and server repositories for modular development and high-performance communication.',
@@ -17,14 +26,14 @@ function Project() {
       live: '',
       path: 'https://github.com/SHAMIL-VAKKAYIL/devChatServer'
     },
-    {
-      id: 9,
-      title: 'OpenSource Investment',
-      desc: 'A robust investment platform built with a microservices architecture. It leverages Apache Kafka for real-time event streaming, Node.js for scalable backend services, and React for a dynamic frontend. Integrated with Stripe for development-mode payment processing, showcasing a complete end-to-end fintech solution.',
-      image: openSourceImg,
-      live: '',
-      path: 'https://github.com/SHAMIL-VAKKAYIL/opensource_investement'
-    },
+    // {
+    //   id: 9,
+    //   title: 'OpenSource Investment',
+    //   desc: 'A robust investment platform built with a microservices architecture. It leverages Apache Kafka for real-time event streaming, Node.js for scalable backend services, and React for a dynamic frontend. Integrated with Stripe for development-mode payment processing, showcasing a complete end-to-end fintech solution.',
+    //   image: openSourceImg,
+    //   live: '',
+    //   path: 'https://github.com/SHAMIL-VAKKAYIL/opensource_investement'
+    // },
     {
       id: 10,
       title: 'Ecom Microservice Migration',
@@ -76,6 +85,7 @@ function Project() {
     //   live: '',
     //   path: 'https://github.com/SHAMIL-VAKKAYIL/food_recipe-web'
     // },
+
     {
       id: 3,
       title: 'Memories Vault',
@@ -112,7 +122,7 @@ function Project() {
         <div className=' gap-3 bg-transparent w-full  flex flex-wrap  justify-center mb-3'>
           {Projects.map((project) => {
             return (
-              <div key={project.id} className="mt-5 md:w-[40%]   flex gap-3 grayscale hover:grayscale-0 hover:scale-105 ease-in-out transform transition-all duration-300">
+              <div key={project.id} className="mt-5 w-full md:w-[45%] lg:w-[31%] flex">
                 <ProjectCardComp
                   description={project.desc}
                   live={project.live}
