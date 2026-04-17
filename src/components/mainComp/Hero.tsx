@@ -59,8 +59,8 @@ function Hero() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
                             <a
-                                href="/shamilSoftwareEngineerResume.pdf"
-                                download='shamilSoftwareEngineerResume.pdf'
+                                href="/Muhammed_Shamil_Fullstack_Resume.pdf"
+                                download='Muhammed_Shamil_Fullstack_Resume.pdf'
                                 className="border-2 border-secondary rounded-lg font-sembld p-1 px-2 hover:border-primary bg-card">Download CV</a>
                         </motion.div>
                     </div>
